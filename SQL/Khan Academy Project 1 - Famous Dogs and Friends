@@ -1,0 +1,123 @@
+/* Famous Dogs and Friends - Khan Academy Unit Project */
+
+CREATE TABLE dogs (id INTEGER PRIMARY KEY AUTOINCREMENT,
+    dog_name TEXT,
+    breed TEXT,
+    owner TEXT,
+    dog_sex TEXT);
+    
+INSERT INTO dogs (Dog_Name,Breed,Owner,Dog_Sex) VALUES('Sadie','Lab/Terrier/Poodle','Alyssa','F');
+INSERT INTO dogs (Dog_Name,Breed,Owner,Dog_Sex) VALUES('Bailey','Husky/Corgi','Alyssa','F');
+INSERT INTO dogs (Dog_Name,Breed,Owner,Dog_Sex) VALUES('Molly','Husky/German Shepherd','Alyssa','F');
+INSERT INTO dogs (Dog_Name,Breed,Owner,Dog_Sex) VALUES('Mia','Golden Retriever','Claire','F');
+INSERT INTO dogs (Dog_Name,Breed,Owner,Dog_Sex) VALUES('Scarlett','Golden Retriever','Claire','F');
+INSERT INTO dogs (Dog_Name,Breed,Owner,Dog_Sex) VALUES('Hedwig','Cattle Dog/Pit','Lizzie','F');
+INSERT INTO dogs (Dog_Name,Breed,Owner,Dog_Sex) VALUES('Motive','Pit/Husky','Lizzie','M');
+INSERT INTO dogs (Dog_Name,Breed,Owner,Dog_Sex) VALUES('Annie','Golden Retriever','Jacqui','F');
+INSERT INTO dogs (Dog_Name,Breed,Owner,Dog_Sex) VALUES('Jolt','Golden Retriever','Jacqui','F');
+INSERT INTO dogs (Dog_Name,Breed,Owner,Dog_Sex) VALUES('Eevee','Golden Retriever','Jacqui','F');
+INSERT INTO dogs (Dog_Name,Breed,Owner,Dog_Sex) VALUES('Billy','Border Collie','Alexis','M');
+INSERT INTO dogs (Dog_Name,Breed,Owner,Dog_Sex) VALUES('Emily','Border Collie','Alexis','F');
+INSERT INTO dogs (Dog_Name,Breed,Owner,Dog_Sex) VALUES('Journey','Border Collie','Alexis','F');
+INSERT INTO dogs (Dog_Name,Breed,Owner,Dog_Sex) VALUES('Bowie','Border Collie','Alexis','M');
+INSERT INTO dogs (Dog_Name,Breed,Owner,Dog_Sex) VALUES('Gabe','Saluki','Clarissa','M');
+INSERT INTO dogs (Dog_Name,Breed,Owner,Dog_Sex) VALUES('Loki','Saluki','Clarissa','M');
+INSERT INTO dogs (Dog_Name,Breed,Owner,Dog_Sex) VALUES('Luci','Azawakh','Clarissa','M');
+INSERT INTO dogs (Dog_Name,Breed,Owner,Dog_Sex) VALUES('Lock','German Shepherd','Jessica','M');
+INSERT INTO dogs (Dog_Name,Breed,Owner,Dog_Sex) VALUES('Petzl','Belgian Malinois','Jessica','F');
+INSERT INTO dogs (Dog_Name,Breed,Owner,Dog_Sex) VALUES('Tempo','Belgian Malinois','Jessica','F');
+INSERT INTO dogs (Dog_Name,Breed,Owner,Dog_Sex) VALUES('Lumi','Siberian Husky','Anna','F');
+INSERT INTO dogs (Dog_Name,Breed,Owner,Dog_Sex) VALUES('Kovaa','Siberian Husky','Anna','M');
+INSERT INTO dogs (Dog_Name,Breed,Owner,Dog_Sex) VALUES('Mahti','Siberian Husky','Anna','M');
+INSERT INTO dogs (Dog_Name,Breed,Owner,Dog_Sex) VALUES('Chewy','Dalmation','Yasuyo','M');
+
+CREATE TABLE famous (id INTEGER PRIMARY KEY AUTOINCREMENT,
+    dog_id TEXT,
+    movies_tv TEXT);
+    
+INSERT INTO famous (Dog_ID,Movies_TV) VALUES('1','N');
+INSERT INTO famous (Dog_ID,Movies_TV) VALUES('2','N');
+INSERT INTO famous (Dog_ID,Movies_TV) VALUES('3','N');
+INSERT INTO famous (Dog_ID,Movies_TV) VALUES('4','N');
+INSERT INTO famous (Dog_ID,Movies_TV) VALUES('5','N');
+INSERT INTO famous (Dog_ID,Movies_TV) VALUES('6','N');
+INSERT INTO famous (Dog_ID,Movies_TV) VALUES('7','Y');
+INSERT INTO famous (Dog_ID,Movies_TV) VALUES('8','N');
+INSERT INTO famous (Dog_ID,Movies_TV) VALUES('9','Y');
+INSERT INTO famous (Dog_ID,Movies_TV) VALUES('10','Y');
+INSERT INTO famous (Dog_ID,Movies_TV) VALUES('11','N');
+INSERT INTO famous (Dog_ID,Movies_TV) VALUES('12','N');
+INSERT INTO famous (Dog_ID,Movies_TV) VALUES('13','N');
+INSERT INTO famous (Dog_ID,Movies_TV) VALUES('14','N');
+INSERT INTO famous (Dog_ID,Movies_TV) VALUES('15','Y');
+INSERT INTO famous (Dog_ID,Movies_TV) VALUES('16','N');
+INSERT INTO famous (Dog_ID,Movies_TV) VALUES('17','Y');
+INSERT INTO famous (Dog_ID,Movies_TV) VALUES('18','N');
+INSERT INTO famous (Dog_ID,Movies_TV) VALUES('19','N');
+INSERT INTO famous (Dog_ID,Movies_TV) VALUES('20','N');
+INSERT INTO famous (Dog_ID,Movies_TV) VALUES('21','N');
+INSERT INTO famous (Dog_ID,Movies_TV) VALUES('22','N');
+INSERT INTO famous (Dog_ID,Movies_TV) VALUES('23','N');
+INSERT INTO famous (Dog_ID,Movies_TV) VALUES('24','N');
+
+CREATE TABLE coat (id INTEGER PRIMARY KEY AUTOINCREMENT,
+    coat_type TEXT,
+    color_1 TEXT,
+    color_2 TEXT);
+    
+INSERT INTO coat (coat_type,color_1,color_2) VALUES('Long','Black','White');
+INSERT INTO coat (coat_type,color_1,color_2) VALUES('Long','Black','White');
+INSERT INTO coat (coat_type,color_1,color_2) VALUES('Short','Black','');
+INSERT INTO coat (coat_type,color_1,color_2) VALUES('Long','Blonde','');
+INSERT INTO coat (coat_type,color_1,color_2) VALUES('Long','Blonde','');
+INSERT INTO coat (coat_type,color_1,color_2) VALUES('Short','White','Brown');
+INSERT INTO coat (coat_type,color_1,color_2) VALUES('Short','Brown','');
+INSERT INTO coat (coat_type,color_1,color_2) VALUES('Long','Blonde','');
+INSERT INTO coat (coat_type,color_1,color_2) VALUES('Long','Blonde','');
+INSERT INTO coat (coat_type,color_1,color_2) VALUES('Long','Blonde','');
+INSERT INTO coat (coat_type,color_1,color_2) VALUES('Long','Black','White');
+INSERT INTO coat (coat_type,color_1,color_2) VALUES('Long','Brown','White');
+INSERT INTO coat (coat_type,color_1,color_2) VALUES('Long','Black','White');
+INSERT INTO coat (coat_type,color_1,color_2) VALUES('Long','Brown','White');
+INSERT INTO coat (coat_type,color_1,color_2) VALUES('Short','White','Brown');
+INSERT INTO coat (coat_type,color_1,color_2) VALUES('Short','White','Brown');
+INSERT INTO coat (coat_type,color_1,color_2) VALUES('Short','Black','');
+INSERT INTO coat (coat_type,color_1,color_2) VALUES('Short','Brown','Black');
+INSERT INTO coat (coat_type,color_1,color_2) VALUES('Short','Brown','Black');
+INSERT INTO coat (coat_type,color_1,color_2) VALUES('Short','Brown','Black');
+INSERT INTO coat (coat_type,color_1,color_2) VALUES('Long','White','');
+INSERT INTO coat (coat_type,color_1,color_2) VALUES('Long','Gray','White');
+INSERT INTO coat (coat_type,color_1,color_2) VALUES('Long','Brown','Red');
+INSERT INTO coat (coat_type,color_1,color_2) VALUES('Short','White','Black');
+
+CREATE TABLE good_doggo (id INTEGER PRIMARY KEY AUTOINCREMENT,
+    good_doggo_id INTEGER,
+    good_doggo TEXT);
+    
+INSERT INTO good_doggo (good_doggo_id,good_doggo) VALUES(1,'Good Doggo');
+
+
+/*Queries*/
+
+SELECT COUNT(*), owner FROM dogs
+    GROUP BY owner;
+    
+SELECT dog_name, owner, famous.movies_TV AS 'Appeared in movies/tv' FROM dogs
+    JOIN famous
+    ON dogs.id = famous.dog_id
+    WHERE famous.movies_TV = "Y";
+    
+SELECT count(*) AS 'Number of Dogs', color_1, color_2, dogs.owner FROM coat
+    LEFT OUTER JOIN dogs
+    ON coat.id = dogs.id
+    WHERE color_1 = "Black" AND color_2 = "White"
+    GROUP BY dogs.owner;
+    
+SELECT count(*), breed, coat_type FROM dogs
+    JOIN coat
+    ON dogs.id = coat.id
+    GROUP BY breed
+    ORDER BY coat_type, count(*) desc;
+    
+SELECT dog_name, breed, good_doggo FROM good_doggo
+    LEFT OUTER JOIN dogs;
