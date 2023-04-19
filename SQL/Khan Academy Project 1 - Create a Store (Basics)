@@ -1,0 +1,32 @@
+CREATE TABLE Urban_Mushing_Gear 
+        (id INTEGER PRIMARY KEY, 
+        item TEXT,sport_class TEXT,
+        size_or_length TEXT, 
+        quantity_in_store INTEGER, 
+        price INTEGER );
+
+INSERT INTO Urban_Mushing_Gear VALUES (1, "Running Belt","Canicross","S",3,58);
+INSERT INTO Urban_Mushing_Gear VALUES (2, "Bungee Line","Canicross","5 feet",10,22);
+INSERT INTO Urban_Mushing_Gear VALUES (3, "Bungee Line","Canicross","6 feet",10,27);
+INSERT INTO Urban_Mushing_Gear VALUES (4,"Bike Antenna","Bikejoring","Detachable",6,50);
+INSERT INTO Urban_Mushing_Gear VALUES (5,"Bike Antenna","Bikejoring","Fixed",4,50);
+INSERT INTO Urban_Mushing_Gear VALUES (6,"Bungee Line","Bikejoring","7 feet",5,40);
+INSERT INTO Urban_Mushing_Gear VALUES (7,"Bungee Line","Bikejoring","8 feet",4,50);
+INSERT INTO Urban_Mushing_Gear VALUES (8,"Running Belt","Canicross","M",3,58);
+INSERT INTO Urban_Mushing_Gear VALUES (9,"Running Belt","Canicross","L",3,58);
+INSERT INTO Urban_Mushing_Gear VALUES (10,"CTC Dog Harness","All Classes","XS",2,65);
+INSERT INTO Urban_Mushing_Gear VALUES (11,"CTC Dog Harness","All Classes","S",3,65);
+INSERT INTO Urban_Mushing_Gear VALUES (12,"CTC Dog Harness","All Classes","M",3,65);
+INSERT INTO Urban_Mushing_Gear VALUES (13,"CTC Dog Harness","All Classes","L",2,65);
+INSERT INTO Urban_Mushing_Gear VALUES (14,"CTC Dog Harness","All Classes","XL",1,65);
+
+INSERT INTO Urban_Mushing_Gear VALUES (15,"Nonstop Freemotion Dog Harness","All Classes","4",4,89);
+INSERT INTO Urban_Mushing_Gear VALUES (16,"Nonstop Freemotion Dog Harness","All Classes","5",5,89);
+INSERT INTO Urban_Mushing_Gear VALUES (17,"Nonstop Freemotion Dog Harness","All Classes","6",5,89);
+INSERT INTO Urban_Mushing_Gear VALUES (18,"Nonstop Freemotion Dog Harness","All Classes","7",3,89);
+INSERT INTO Urban_Mushing_Gear VALUES (19,"Nonstop Freemotion Dog Harness","All Classes","8",1,89);
+INSERT INTO Urban_Mushing_Gear VALUES (20,"Alpine Outfitters X-Back Harness","All Classes","Custom",5,38);
+
+SELECT * FROM Urban_Mushing_Gear ORDER by Price asc;
+SELECT SUM(quantity_in_store), AVG(price) FROM Urban_Mushing_Gear WHERE item LIKE "% dog harness";
+SELECT sport_class AS "Sport Class", sum(quantity_in_store) AS "Total Quantity in Store", ROUND(avg(price),2) AS "Average Price (USD)" FROM Urban_Mushing_Gear GROUP by sport_class 
