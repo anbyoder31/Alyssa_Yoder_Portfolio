@@ -1,0 +1,34 @@
+CREATE TABLE weightwatchers 
+    (id INTEGER PRIMARY KEY AUTOINCREMENT,
+    meal TEXT,
+    food INTEGER,
+    points INTEGER);
+
+INSERT INTO weightwatchers (meal, food, points) VALUES ("Breakfast", "Coffee creamer", 2);
+INSERT INTO weightwatchers (meal, food, points) VALUES ("Breakfast", "Oat milk", 0);
+INSERT INTO weightwatchers (meal, food, points) VALUES ("Breakfast", "Breakfast sandwich", 3);
+INSERT INTO weightwatchers (meal, food, points) VALUES ("Lunch", "Mimosa", 4);
+INSERT INTO weightwatchers (meal, food, points) VALUES ("Lunch", "Bloody Mary", 4);
+INSERT INTO weightwatchers (meal, food, points) VALUES ("Lunch", "Quesabirria", 17);
+INSERT INTO weightwatchers (meal, food, points) VALUES ("Dinner", "Salmon", 0);
+INSERT INTO weightwatchers (meal, food, points) VALUES ("Dinner", "Cauliflower rice stirfry", 1);
+INSERT INTO weightwatchers (meal, food, points) VALUES ("Snacks", "Popcorn", 6);
+
+SELECT * FROM weightwatchers;
+
+ALTER TABLE weightwatchers ADD amount TEXT default "One serving size";
+UPDATE weightwatchers SET amount = "1 Tbsp" WHERE food = "Coffee creamer";
+UPDATE weightwatchers SET amount = "4 flo oz" WHERE food = "Oat milk";
+SELECT * FROM weightwatchers;
+
+SELECT sum(points) AS points, meal FROM weightwatchers
+    GROUP BY meal
+    ORDER BY points asc;
+    
+DELETE from weightwatchers where food = "Mimosa";
+SELECT * from weightwatchers;
+
+SELECT sum(points) AS points, meal FROM weightwatchers
+    GROUP BY meal
+    ORDER BY points asc;
+
