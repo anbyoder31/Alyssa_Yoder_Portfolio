@@ -1,4 +1,3 @@
-Schema SQL Query SQL ResultsEdit on DB Fiddle
 /* --------------------
    Case Study Questions
    --------------------*/
